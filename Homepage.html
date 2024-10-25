@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=width-device, initial-scale=1.0">
+        <meta name="keyword" content="Trainings, About Us">
+        <meta name="description" content="CAD & GIS Store is an online platform aim at transforming the world into a global vilage.">
+        <meta http-equiv="refresh" content="30">
+        <meta name="author" content="CAD & GIS STORE">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Homepage.css">
+        <!-- CAD & GIS Store tab manager-->
+         <title>CAD & GIS Store</title>
+         <script src="responsive.js"></script>
+    </head>
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+        //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+      </script>
+        <div class="container">
+            <h1>CAD & GIS STORES</h1>
+            <hr style="width: 150px;">
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" title="go to home" class="activepage">HOME</a>
+            <a href="#blog" title="go to blog">BLOG</a>
+            <div class="dropdown">
+                <button class="dropbtn" title="go to Services">SERVICES
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="">DRONE OPERATION</a>
+                    <a href="">TRAINING</a>
+                    <a href="">REAL ESTATE DEVELOPMENT</a>
+                    <a href=""><abbr title="Computer Numeric Control" style="text-decoration: none;">CNC</abbr></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" title="go to training">TRAINING
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href=""><abbr title="Computer Aided Design" style="text-decoration: none;">CAD</abbr></a>
+                    <a href=""><abbr title="Geographic Information System" style="text-decoration: none;">GIS</abbr></a>
+                    <a href="">OTHERS</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./Images/Autocad Buildiing Plan.jpeg" alt="Interior Design Using Sketchup" style="width:100%; height: 600px;">
+              <div class="text">2D Buildiing Plan Using Autocad Software</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./Images/AD_ Foldable Mini Drone with 720P HD Camera.jpeg" alt="" style="width:100%; height: 600px;">
+              <div class="text">Foldable Mini Drone </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./Images/Kaduna Map.jpeg" alt="Exterior Design using Sketchup" style="width:100%; height: 600px;">
+              <div class="text">Kaduna District Map</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+            <h2>OUR SERVICES</h2>
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="./Images/Drone controller.jpeg" alt="Have control over your drone" style="width: 100%; height: 300px;">
+                  <h3 style="color: royalblue; font-family: monospace;">DRONE TRAINING</h3>
+                  <p >Drone training is designed to equip individuals with the skills and knowledge needed to operate drones safely and effectively.</p>
+                  <a href="#see">See details about Drone</a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src="./Images/The Topography Of Africa.jpeg" alt="Have control over your drone" style="width: 100%; height: 300px;">
+                  <h3 style="color: royalblue; font-family: monospace;">GIS TRAINING</h3>
+                  <p>Geographic Information Systems (GIS) are powerful tools used for capturing, storing, analyzing, and visualizing spatial or geographic data.</p>
+                  <a href="#see">See details about Drone</a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src="./Images/Autocad.jpeg" alt="Have control over your drone" style="width: 100%; height: 300px;">
+                  <h3 style="color: royalblue; font-family: monospace;">AUTOCAD TRAINING</h3>
+                  <p>AutoCAD is a widely used computer-aided design (CAD) software developed by Autodesk. It's used for construction, etc.</p>
+                  <a href="#see">See details about Drone</a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src="./Images/3D Modelling.jpeg" alt="Have control over your drone" style="width: 100%; height: 300px;">
+                  <h3 style="color: royalblue; font-family: monospace;">3D MODELLING</h3>
+                  <p>SketchUp is a user-friendly 3D modeling software widely used in architecture, interior design, engineering, and construction.</p>
+                  <a href="#see">See details about Drone</a>
+                </div>
+              </div>
+            </div>
+    </body>
+</html>
